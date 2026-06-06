@@ -27,58 +27,58 @@ DNS Queries observed:
 - openai.com
 - tryhackme.com
 
-- play.Google.com -
-- DNS Server:
-- The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
+ -  play.Google.com -
+  DNS Server:
+  The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
-- PROTOCOL USED:
-- UDP, src port: 53, dst Port:: 51479
+  PROTOCOL USED:
+  UDP, src port: 53, dst Port:: 51479
 
-- RETURNED IP ADDRESS:
-- 142.250.183.46
+  RETURNED IP ADDRESS:
+  142.250.183.46
 
-- GitHub.com -
-- DNS Server:
-- The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
+-  GitHub.com -
+  DNS Server:
+  The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
-- PROTOCOL USED:
-- UDP, src port: 53, Dst Port: 59230
+  PROTOCOL USED:
+  UDP, src port: 53, Dst Port: 59230
 
-- RETURNED IP ADDRESS:
-- 4.237.22.38
+  RETURNED IP ADDRESS:
+  4.237.22.38
 
-- openai.com -
-- DNS Server:
-- The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
+-  openai.com -
+  DNS Server:
+  The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
-- PROTOCOL USED:
-- UDP, Src Port: 53, Dst Port: 53225
+  PROTOCOL USED:
+  UDP, Src Port: 53, Dst Port: 53225
 
-- RETURNED IP ADDRESS:
-- 172.64.148.235 & 104.18.39.21
+  RETURNED IP ADDRESS:
+  172.64.148.235 & 104.18.39.21
 
-- tryhackme.com -
-- DNS Server:
-- The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
+-  tryhackme.com -
+  DNS Server:
+  The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
-- PROTOCOL USED:
-- UDP, Src Port: 53, Dst Port: 50937
+  PROTOCOL USED:
+  UDP, Src Port: 53, Dst Port: 50937
 
-- RETURNED IP ADDRESS:
-- 52.92.18.97, 52.92.3.169, 52.92.35.105, 3.5.69.5, 3.5.73.50, 3.5.71.109, 3.5.64.209, 52.92.32.153
+  RETURNED IP ADDRESS:
+  52.92.18.97, 52.92.3.169, 52.92.35.105, 3.5.69.5, 3.5.73.50, 3.5.71.109, 3.5.64.209, 52.92.32.153
 
 # ANALYSIS
-- play.Google.com
-- The DNS capture showed a successful query for play.google.com.au, which was resolved to the IPv4 address 142.250.183.46. The response was received over UDP port 53, demonstrating the standard DNS resolution process. This highlights how DNS translates human-readable domain names into IP addresses, allowing devices to locate and communicate with web services on the internet.
+-  play.Google.com
+  The DNS capture showed a successful query for play.google.com.au, which was resolved to the IPv4 address 142.250.183.46. The response was received over UDP port 53, demonstrating the standard DNS resolution process.     This highlights how DNS translates human-readable domain names into IP addresses, allowing devices to locate and communicate with web services on the internet.
 
-- GitHub.com:
-- GitHub resolved to a single IPv4 address (4.237.22.38), demonstrating how DNS translates human-readable domain names into routable IP addresses. 
+-  GitHub.com:
+  GitHub resolved to a single IPv4 address (4.237.22.38), demonstrating how DNS translates human-readable domain names into routable IP addresses. 
 
 - Openai.com:
-- OpenAi returned multiple IPv4 addresses (172.64.148.235 and 104.18.39.21), indicating the use of load balancing and distributed infrastructure.
+  OpenAi returned multiple IPv4 addresses (172.64.148.235 and 104.18.39.21), indicating the use of load balancing and distributed infrastructure.
 
 - tryhackme.com:
-- TryHackMe returned multiple IP addresses hosted within AWS infrastructure, suggesting the use of cloud-based content delivery and redundancy mechanisms.
+  TryHackMe returned multiple IP addresses hosted within AWS infrastructure, suggesting the use of cloud-based content delivery and redundancy mechanisms.
 
 # SECURITY RELEVANCE
 - DNS traffic is valuable during security investigations because it can reveal which domains a user or system has attempted to access. Threat actors may abuse DNS through techniques such as DNS tunnelling, command-and-control communications, domain generation algorithms (DGAs), and DNS cache poisoning. Monitoring DNS activity can help security teams identify malicious behaviour and investigate incidents.
