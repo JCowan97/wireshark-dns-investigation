@@ -27,7 +27,8 @@ DNS Queries observed:
 - openai.com
 - tryhackme.com
 
- -  play.Google.com -
+  "play.Google.com"
+
   DNS Server:
   The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
@@ -37,7 +38,8 @@ DNS Queries observed:
   RETURNED IP ADDRESS:
   142.250.183.46
 
--  GitHub.com -
+  "GitHub.com"
+  
   DNS Server:
   The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
@@ -47,7 +49,8 @@ DNS Queries observed:
   RETURNED IP ADDRESS:
   4.237.22.38
 
--  openai.com -
+  "openai.com"
+  
   DNS Server:
   The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
@@ -57,7 +60,8 @@ DNS Queries observed:
   RETURNED IP ADDRESS:
   172.64.148.235 & 104.18.39.21
 
--  tryhackme.com -
+  "tryhackme.com"
+  
   DNS Server:
   The DNS capture shows communication between the client (192.168.0.68) and the local DNS resolver (192.168.0.1).
 
